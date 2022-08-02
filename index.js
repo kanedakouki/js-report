@@ -55,7 +55,7 @@ function component() {
 
     piece.style.order = positions[n];
   }
-  document.getElementById('count').innerHTML = "現在のクリック数は"+count ;
+  document.getElementById('count').innerHTML = "現在の移動回数"+count ;
 }
 
 
@@ -101,8 +101,8 @@ function pieceClickHandler(event) {
   }
   //クリアした時に，アラートを表示（OKを押すとリロード）
   if(isFinished(positions)==true){
-    window.alert("手数"+count+"でクリア");
-    window.alert("Restart!!");
+    window.alert("手数"+count+"congratulation");
+    window.alert("Reset");
     document.location.reload();
   }
 }
